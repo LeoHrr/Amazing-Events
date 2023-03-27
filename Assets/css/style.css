@@ -271,4 +271,10 @@
   border-radius: 50px;
   margin: 0.5%;
 }
-
+.cabecera{
+  background-color: rgb(192, 0, 96);
+}
+.txt-cabecera{
+  color: white;
+  font-weight: bold;
+}

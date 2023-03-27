@@ -53,7 +53,7 @@ function printCard(arrayDatos){
       <h5 class="card-title">${elemento.name}</h5>
       <p class="card-text">${elemento.description}</p>
       <p class="price">Price: $${elemento.price}</p>
-      <a href="../../Templates/cards.html?id=${elemento._id}" class="btn btn-mas">See more...</a>
+      <a href="Templates/cards.html?id=${elemento._id}" class="btn btn-mas">See more...</a>
     </div>
     </div>`
   })
