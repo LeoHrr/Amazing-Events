@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./Assets/css/style.css"/>
+    <title>Home - Amazing Events</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded m-2 shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./Assets/img/Logo Amazing Events.png" alt="logo" class="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active border" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border" href="./Templates/upcoming.html">Upcoming Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border" href="./Templates/past-events.html"> Past Events </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link border" href="./Templates/contact.html"> Contact </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border" href="./Templates/stats.html"> Stats </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </nav>    
+    </header>
+
+    <main>
+      
+
+        <div id="carouselExampleIndicators" class="carousel slide py-3 mx-2 shadow rounded bg-light" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#" class="carouselItem">
+                <h3 class="text-center ">Home</h3>
+              </a>
+            </div>
+            
+          </div>
+          <a class="btnPre" href="#"></a>
+          <a class="btnNext" href="./Templates/upcoming.html"></a>
+        </div>
+
+        <div class="container-fluid my-2 cat-search">
+          <div class="row">
+
+              <div class="col">
+  
+                <div class="category" id="checkContainer">
+                </div>
+              
+              </div> 
+  
+            <div class="col">
+  
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" aria-label="Search" placeholder="Filter"/>
+                <button class="btn search-btn" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="my-4 py-2 mx-2  rounded shadow bg-light">
+                
+          <div class="cards" id="homeEvents">
+          </div>
+          <!-- Cards -->
+        </div>
+
+    </main>
+    <footer class="col-md-4 d-flex align-items-center justify-content-end">
+
+        <a href="#" class="icon-red ">
+          <i class="bi-instagram fs-4"></i>
+        </a>
+        <a href="#" class="icon-red">
+          <i class="bi-facebook fs-4"></i>
+        </a>
+        <a href="#" class="icon-red" >
+          <i class="bi-whatsapp fs-4"></i>
+        </a>
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-muted">© 2023 Amazing Events.</span>
+      </div>
+
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./Assets/js/data.js"></script>
+    <script src="./Assets/js/dataHome.js">
+    </script>
+  </body>
+</html>

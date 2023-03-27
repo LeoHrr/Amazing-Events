@@ -1,0 +1,274 @@
+.logo {
+    width: 150px;
+  }
+
+  @media(min-width: 991px){
+    .logo{
+        margin-right:460px ;
+    }
+}
+  @media(min-width: 1200px){
+    .logo{
+        margin-right: 660px;
+    }
+  }
+  @media(min-width: 1700px){
+    .logo{
+        margin-right: 1000px;
+    }
+  }
+.border{
+    margin: 2px;
+    padding: 5px;
+}
+.cat-search{
+  position: relative;
+  top: 80px;
+  z-index: 1; 
+  
+}
+
+  .search-btn{
+    background-color: #d30562;
+    color: white;
+  }
+
+  .carouselItem {
+    text-decoration: none;
+    color: gray;
+  }
+  .carouselItem:hover {
+
+    color: rgb(192, 0, 96);
+  }
+  .check {
+    background-color: white;
+  }
+  .check:checked {
+    background-color: rgb(192, 0, 96);
+    border-color: white;
+  }
+  .category {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 480px) {
+    .category {
+      display: flex;
+      flex-flow: row nowrap;
+      overflow-x: scroll;
+      margin-bottom: 1rem;
+    }
+  }
+    
+/*   .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100%, 100%;
+    background-image: none;
+    height: 100px;
+    width: 100px;
+  }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 60px;
+    position: absolute;
+    bottom: 5px;
+    color: grey;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 60px;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    color: grey;
+  }
+  .button-pre, .button-next{
+    height: 80px;
+    width: 80px;
+  } */
+
+  /* cards */
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 70px;
+  margin: 5%;
+}
+@media screen and (max-width: 750px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+}
+.img-card{
+  height: 180px;
+  padding: 10px;
+}
+.card-img-top{
+  height: 150px;
+}
+.card-text{
+  height: 100px;
+}
+.price{
+  display: inline;
+}
+.btn-mas {
+  background-color: rgb(192, 0, 96);
+  color: white;
+  width: 110px;
+  position: relative;
+  left: 60px;
+}
+
+/* fin cards */
+
+.icon-red{
+  color: gray;
+  margin-right: 5px;
+}
+.icon-red:hover{
+  color: rgb(192, 0, 96);
+}
+
+/* form */
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.input-name, .input-email, .input-text{
+  width: 500px;
+}
+.input-text{
+  height: 100px;
+}
+.button-submit{
+  background-color: rgb(192, 0, 96);
+  color: white;
+  position: relative;
+  left: 200px;
+}
+/* fin form */
+
+/* status */
+.tabla{
+  width: 75%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.fila {
+  width: 100%;
+}
+
+.fila td, .fila th {
+  text-align: center;
+  padding: 15px;
+  border: #b2b2b2 1px solid;
+}
+
+
+.fila th {
+  padding: 10px;
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+
+/* fin status */
+
+/* .btnprueba{
+  background-size: 100%, 100%;
+    background-image: none;
+    height: 100px;
+    width: 100px;
+    border: none;
+  
+}
+.btnprueba:after{
+  content: ">";
+  font-size: 60px;
+  position: absolute;
+  bottom: 5px;
+  color: grey;
+  left: 300px;
+    
+} */
+
+/* nav contact-stats */
+
+.btnPre,
+.btnNext {
+  background-size: 100%, 100%;
+  background-image: none;
+  height: 100px;
+  width: 100px;
+}
+
+.btnNext:after {
+  content: ">";
+  font-size: 60px;
+  position: absolute;
+  bottom: 1px;
+  left: 95%;
+  color: grey;
+}
+
+.btnPre:after {
+  content: "<";
+  font-size: 60px;
+  position: absolute;
+  bottom: 1px;
+  color: grey;
+}
+
+.cont-detalles{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  border: rgb(192, 0, 96) 1px solid;
+  background-color: rgb(192, 0, 96);
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100px;
+  border-radius: 50px;
+  
+  
+}
+.img-det{
+  padding: 20px;
+  width: 100%;
+  border-radius: 50px;
+
+}
+.border-rad{
+  border-radius: 15px;
+}
+.descrip-color{
+  color: rgb(255, 255, 255);
+  margin: 25px;
+}
+.justify-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fondo-descr{
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  border-radius: 50px;
+  margin: 0.5%;
+}
+
