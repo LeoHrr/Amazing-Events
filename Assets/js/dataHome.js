@@ -1,13 +1,35 @@
 const homeEventsHtml= document.getElementById("homeEvents");
 const contenedorChecks = document.getElementById("checkContainer");
 const input = document.querySelector("input");
-const evento = amazingEventsdata.events;
+const urlAPI = "https://mindhub-xj03.onrender.com/api/amazing";
+let evento = [];
 
-input.addEventListener('input', filtrarArrays);
-contenedorChecks.addEventListener('change',filtrarArrays);
 
-printCard(evento);
-createCheckbox(evento);
+async function getEvents(){
+  try{
+    let response = await fetch(urlAPI);
+    let eventAPI = await response.json();
+
+    for (const event of eventAPI.events) {
+      evento.push(event);
+    }
+
+    input.addEventListener('input', filtrarArrays);
+    contenedorChecks.addEventListener('change',filtrarArrays);
+
+    printCard(evento);
+    createCheckbox(evento); 
+    
+  }catch(error){
+    console.log(error.message);
+  }
+}
+
+getEvents();
+
+
+
+
 
 function filtrarArrays(){
   let arrayFiltrado1 = filtrarPorTexto(evento,input.value);
@@ -81,8 +103,7 @@ function filtrarPorCategoria(arrayCateg){
     console.log(arrayFiltrado);
     return arrayFiltrado;
 }
-
-
+ 
 
 
 
